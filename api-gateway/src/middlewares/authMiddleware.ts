@@ -7,14 +7,15 @@ const validateToken: RequestHandler = (req, res, next) => {
   const token = authHeader?.split(' ')[1]
 
   if (!token) {
-    logger.warn('Acess attempt without valid token')
+    logger.warn('Access attempt without valid token')
     return res.status(401).json({
       success: false,
       message: 'Authentication required',
     })
   }
 
-  jwt.verify(token, process.env.JWT_Secret!, (err, user) => {
+  jwt.verify(token, process.env.JWT_SECRET!, (err, user) => {
+    console.log(user)
     if (err) {
       logger.warn('Invalid token!')
       return res.status(429).json({

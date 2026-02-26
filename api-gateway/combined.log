@@ -90,3 +90,92 @@
 {"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-24T20:31:58.610Z"}
 {"level":"info","message":"Received GET request to /v1/auth/login","service":"api-gateway","timestamp":"2026-02-24T20:33:42.361Z"}
 {"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-24T20:33:42.361Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-25T18:10:21.176Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-25T18:10:21.177Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-25T18:10:21.177Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-25T18:10:21.177Z"}
+{"level":"info","message":"Received GET request to /v1/auth/login","service":"api-gateway","timestamp":"2026-02-25T18:11:07.717Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-25T18:11:07.718Z"}
+{"level":"info","message":"Received GET request to /api/v1/auth/login","service":"api-gateway","timestamp":"2026-02-26T17:23:26.054Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:23:26.058Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-26T17:24:59.493Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-26T17:24:59.494Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-26T17:24:59.494Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-26T17:24:59.494Z"}
+{"level":"info","message":"Received GET request to /api/v1/auth/login","service":"api-gateway","timestamp":"2026-02-26T17:25:05.520Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:25:05.520Z"}
+{"level":"info","message":"Received GET request to /v1/auth/login","service":"api-gateway","timestamp":"2026-02-26T17:25:13.587Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:25:13.587Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-26T17:26:16.358Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-26T17:26:16.359Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-26T17:26:16.359Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-26T17:26:16.359Z"}
+{"level":"info","message":"Received GET request to /v1/auth/login","service":"api-gateway","timestamp":"2026-02-26T17:26:31.325Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:26:31.326Z"}
+{"level":"info","message":"Received GET request to /api/v1/auth/login","service":"api-gateway","timestamp":"2026-02-26T17:26:47.424Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:26:47.424Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"api-gateway","timestamp":"2026-02-26T17:26:57.853Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:26:57.854Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2026-02-26T17:27:22.425Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:27:22.425Z"}
+{"level":"info","message":"Response received from indentity service : 200","service":"api-gateway","timestamp":"2026-02-26T17:27:22.981Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:28:09.294Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:28:09.294Z"}
+{"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2026-02-26T17:28:09.295Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-26T17:29:15.061Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-26T17:29:15.062Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-26T17:29:15.062Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-26T17:29:15.062Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:29:19.161Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:29:19.161Z"}
+{"level":"error","message":"Proxy error: undefined is not an object (evaluating 'proxyReqOpts.headers[\"Content-Type\"] = \"application/json\"')","service":"api-gateway","timestamp":"2026-02-26T17:29:19.163Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-26T17:40:22.233Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-26T17:40:22.234Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-26T17:40:22.234Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-26T17:40:22.234Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:40:45.826Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:40:45.826Z"}
+{"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2026-02-26T17:40:45.826Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-26T17:42:40.366Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-26T17:42:40.367Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-26T17:42:40.367Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-26T17:42:40.367Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:42:48.331Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:42:48.331Z"}
+{"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2026-02-26T17:42:48.332Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-26T17:43:08.347Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-26T17:43:08.349Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-26T17:43:08.349Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-26T17:43:08.349Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:43:11.182Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:43:11.182Z"}
+{"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2026-02-26T17:43:11.183Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-26T17:43:33.589Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-26T17:43:33.590Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-26T17:43:33.591Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-26T17:43:33.591Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:43:37.461Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:43:37.461Z"}
+{"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2026-02-26T17:43:37.461Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:44:14.012Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:44:14.012Z"}
+{"level":"info","message":"Response received from post service : 500","service":"api-gateway","timestamp":"2026-02-26T17:44:14.087Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:47:12.449Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:47:12.449Z"}
+{"level":"info","message":"Response received from post service : 201","service":"api-gateway","timestamp":"2026-02-26T17:47:12.931Z"}
+{"level":"info","message":"Api Gateway is running on port: 3000","service":"api-gateway","timestamp":"2026-02-26T17:47:43.701Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2026-02-26T17:47:43.702Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2026-02-26T17:47:43.702Z"}
+{"level":"info","message":"Redis Url https://pro-tuna-36129.upstash.io","service":"api-gateway","timestamp":"2026-02-26T17:47:43.702Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:53:25.018Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:53:25.019Z"}
+{"level":"info","message":"Response received from post service : 400","service":"api-gateway","timestamp":"2026-02-26T17:53:25.083Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:54:12.626Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:54:12.626Z"}
+{"level":"info","message":"Response received from post service : 400","service":"api-gateway","timestamp":"2026-02-26T17:54:12.678Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:54:17.295Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:54:17.295Z"}
+{"level":"info","message":"Response received from post service : 400","service":"api-gateway","timestamp":"2026-02-26T17:54:17.337Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2026-02-26T17:54:45.513Z"}
+{"level":"info","message":"Received body, [object Object]","service":"api-gateway","timestamp":"2026-02-26T17:54:45.513Z"}
+{"level":"info","message":"Response received from post service : 201","service":"api-gateway","timestamp":"2026-02-26T17:54:45.598Z"}

@@ -51,7 +51,7 @@ const proxyOptions = {
   proxyReqPathResolver: (req: Request) => {
     return req.originalUrl.replace(/^\/v1/, '/api')
   },
-  proxyErrorHanlder: (error: Error, res: Response, next: NextFunction) => {
+  proxyErrorHandler: (error: Error, res: Response, next: NextFunction) => {
     logger.error(`Proxy error: ${error.message}`)
     res.status(500).json({
       success: false,
@@ -67,6 +67,9 @@ app.use(
   '/v1/auth',
   proxy(process.env.IDENTITY_SERVICE_URL!, {
     ...proxyOptions,
+     proxyReqBodyDecorator: (body) => {
+      return body
+    },
     proxyReqOptDecorator(proxyReqOpts, srcReq) {
       proxyReqOpts.headers['Content-Type'] = 'application/json'
       return proxyReqOpts
@@ -86,7 +89,7 @@ app.use(
   validateToken,
   proxy(process.env.POST_SERVICE_URL!, {
     ...proxyOptions,
-    proxyReqBodyDecorator(proxyReqOpts, srcReq) {
+    proxyReqOptDecorator(proxyReqOpts, srcReq) {
       proxyReqOpts.headers['Content-Type'] = 'application/json'
       proxyReqOpts.headers['x-user-id'] = srcReq.user?.userId
 
