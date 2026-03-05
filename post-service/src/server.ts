@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 app.use(rateLimitMiddleware())
 
-app.use('/api/posts/create', sensitiveMiddleware)
+app.use('/api/posts/create-post', sensitiveMiddleware)
 
 app.use('/api/posts/', (req, res, next) => {
     req.redisClient = redisClient

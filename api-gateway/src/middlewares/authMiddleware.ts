@@ -18,13 +18,18 @@ const validateToken: RequestHandler = (req, res, next) => {
     console.log(user)
     if (err) {
       logger.warn('Invalid token!')
-      return res.status(429).json({
+      return res.status(401).json({
         success: false,
         message: 'Invalid token!',
       })
     }
 
-    req.user = user
+    req.user = user as {
+      userId: string
+      username: string
+      iat: number
+      exp: number
+    }
     next()
   })
 }
