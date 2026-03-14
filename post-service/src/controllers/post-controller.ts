@@ -2,6 +2,7 @@ import type { Request, RequestHandler } from 'express'
 import { logger } from '../utils/logger'
 import { Post } from '../models/Post'
 import { validateCreatePost } from '../utils/validation'
+import { publishEvent } from '../utils/rabbitmq'
 
 async function invalidatePostCache(req: Request, input: string) {
   const cachedKey = `post:${input}`
@@ -38,6 +39,7 @@ const createPost: RequestHandler = async (req, res) => {
     return res.status(201).json({
       success: true,
       message: 'Post created successfully',
+      postId: newlyCreatedPost._id,
     })
   } catch (error) {
     logger.error('Error creating post', error)
@@ -131,6 +133,13 @@ const deletePost: RequestHandler = async (req, res) => {
         message: 'Post not found',
       })
     }
+
+    // publish post delete method
+    await publishEvent('post.deleted', {
+      postId: post._id.toString(),
+      userId: req.user?.userId,
+      mediaIds: post.mediaIds,
+    })
 
     await invalidatePostCache(req, postId)
 

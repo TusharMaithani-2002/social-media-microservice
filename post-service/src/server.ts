@@ -9,6 +9,7 @@ import { logger } from './utils/logger'
 import { redisClient } from './utils/redis'
 import { rateLimitMiddleware } from './middlewares/redisRateLimiter'
 import { sensitiveMiddleware } from './middlewares/senstitveRateLimiter'
+import { connectToRabbitMQ } from './utils/rabbitmq'
 
 configDotenv()
 
@@ -33,17 +34,31 @@ app.use(rateLimitMiddleware())
 
 app.use('/api/posts/create-post', sensitiveMiddleware)
 
-app.use('/api/posts/', (req, res, next) => {
+app.use(
+  '/api/posts/',
+  (req, res, next) => {
     req.redisClient = redisClient
     next()
-}, router)
+  },
+  router,
+)
 
 app.use(errorHandler)
 
-app.listen(PORT, () => {
-    logger.info(`Identity service running on port ${PORT}`)
-})
+async function startServer() {
+  try {
+    await connectToRabbitMQ()
+    app.listen(PORT, () => {
+      logger.info(`Identity service running on port ${PORT}`)
+    })
+  } catch (error) {
+    logger.error('Failed to start the server', error)
+    process.exit(1)
+  }
+}
+
+startServer()
 
 process.on('unhandledRejection', (reason, promise) => {
-    logger.error('Unhandled Rejection at', promise, 'reason:', reason)
+  logger.error('Unhandled Rejection at', promise, 'reason:', reason)
 })
